@@ -185,7 +185,7 @@ export default class Home extends Component {
 						<H4 text="Just click around" />
 						<Emoji text="👆" />
 					</SpaceBetweenWrap>
-					<Paragraph text="Best wishes from Mobgen" />
+					<Paragraph text="Best wishes from Mobgen :D" />
 				</NewYearWrap>
 			</Container>
 		);

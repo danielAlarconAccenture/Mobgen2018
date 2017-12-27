@@ -823,7 +823,7 @@ var _ref3 = Object(preact_min["h"])(
 	Object(preact_min["h"])(components_Emoji, { text: '\uD83D\uDC46' })
 );
 
-var _ref4 = Object(preact_min["h"])(components_Paragraph, { text: 'Best wishes from Mobgen' });
+var _ref4 = Object(preact_min["h"])(components_Paragraph, { text: 'Best wishes from Mobgen :D' });
 
 var home_Home = function (_Component) {
 	_inherits(Home, _Component);
