@@ -1,8 +1,8 @@
-# {{ name }}
+# Mobgen 2018
 
 ## CLI Commands
 
-``` bash
+```bash
 # install dependencies
 npm install
 

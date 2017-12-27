@@ -13,8 +13,6 @@ import style from './style';
 import Container from '../../components/Container';
 import SpaceBetweenWrap from './SpaceBetweenWrap';
 
-window.human = false;
-
 export default class Home extends Component {
 	constructor() {
 		super();
@@ -54,7 +52,6 @@ export default class Home extends Component {
 		document.addEventListener(
 			this.tap,
 			e => {
-				window.human = true;
 				this.renderAnimation.play();
 				this.updateCoords(e);
 				this.animateParticules(this.pointerX, this.pointerY);
@@ -180,7 +177,7 @@ export default class Home extends Component {
 					<AlignStartWrap>
 						<H3 text="Make" style={style.make} />
 					</AlignStartWrap>
-					<Image />
+					<Image src="https://www.talkinglifestyle.com.au/wp-content/uploads/sites/17/2017/12/2018.jpg" />
 					<AlignEndWrap>
 						<H3 class={style.spark} text="Spark" />
 					</AlignEndWrap>
