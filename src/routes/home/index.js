@@ -175,7 +175,7 @@ export default class Home extends Component {
 				<Canvas className="fireworks" />
 				<NewYearWrap>
 					<AlignStartWrap>
-						<H3 text="Make" style={style.make} />
+						<H3 text="Make it happen" style={style.make} />
 					</AlignStartWrap>
 					<Image src="https://www.talkinglifestyle.com.au/wp-content/uploads/sites/17/2017/12/2018.jpg" />
 					<AlignEndWrap>

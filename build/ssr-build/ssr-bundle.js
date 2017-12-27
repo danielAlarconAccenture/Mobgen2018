@@ -997,7 +997,7 @@ var home_Home = function (_Component) {
 				Object(preact_min["h"])(
 					AlignStartWrap,
 					null,
-					Object(preact_min["h"])(components_H3, { text: 'Make', style: home_style_default.a.make })
+					Object(preact_min["h"])(components_H3, { text: 'Make it happen', style: home_style_default.a.make })
 				),
 				_ref2,
 				Object(preact_min["h"])(
