@@ -3,9 +3,8 @@ import styled from 'styled-components';
 
 const StyledH3 = styled.h3`
 	margin: 0;
-	font-size: 2rem;
+	font-size: 2.6rem;
 	font-weight: bold;
-	width: 290px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
