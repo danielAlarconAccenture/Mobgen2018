@@ -937,7 +937,7 @@ function AlignStartWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw 
 
 /* harmony default export */ var AlignStartWrap = (styled_components_es["b" /* default */].div(AlignStartWrap__templateObject));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/Wrap.js
-var Wrap__templateObject = Wrap__taggedTemplateLiteralLoose(['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\tmax-width: 100%;\n\t\theight: auto;\n\t\tmax-height: 150px;\n\t}\n'], ['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\tmax-width: 100%;\n\t\theight: auto;\n\t\tmax-height: 150px;\n\t}\n']);
+var Wrap__templateObject = Wrap__taggedTemplateLiteralLoose(['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\theight: auto;\n\t\twidth: 441px;\n\t\tmax-width: 100%;\n\t}\n'], ['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\theight: auto;\n\t\twidth: 441px;\n\t\tmax-width: 100%;\n\t}\n']);
 
 function Wrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
