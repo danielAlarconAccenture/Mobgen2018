@@ -901,7 +901,7 @@ var home_style = __webpack_require__("ZAL5");
 var home_style_default = /*#__PURE__*/__webpack_require__.n(home_style);
 
 // CONCATENATED MODULE: ./components/Container/index.js
-var Container__templateObject = Container__taggedTemplateLiteralLoose(['\n\theight: ', ';\n\twidth: ', ';\n'], ['\n\theight: ', ';\n\twidth: ', ';\n']);
+var Container__templateObject = Container__taggedTemplateLiteralLoose(['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: 20px 0;\n'], ['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: 20px 0;\n']);
 
 function Container__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
@@ -910,15 +910,15 @@ function Container__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw
 
 var Container = styled_components_es["a" /* default */].div(Container__templateObject, function (_ref) {
 	var fullHeight = _ref.fullHeight;
-	return fullHeight ? '100vh' : 'auto';
+	return fullHeight ? '100%' : 'auto';
 }, function (_ref2) {
 	var fullWidth = _ref2.fullWidth;
-	return fullWidth ? '100vw' : 'auto';
+	return fullWidth ? '100%' : 'auto';
 });
 
 /* harmony default export */ var components_Container = (Container);
 // CONCATENATED MODULE: ./routes/home/Logo.js
-var Logo__templateObject = Logo__taggedTemplateLiteralLoose(['\n\tpadding: 10px;\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n'], ['\n\tpadding: 10px;\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n']);
+var Logo__templateObject = Logo__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n'], ['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n']);
 
 
 
@@ -943,7 +943,7 @@ var Logo = function Logo() {
 /* harmony default export */ var home_Logo = (Logo);
 // CONCATENATED MODULE: ./routes/home/index.js
 var home__templateObject = home__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n'], ['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n']),
-    _templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n']);
+    _templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n']);
 
 
 

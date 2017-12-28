@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Image from '../../components/Image';
 
 const Wrap = styled.div`
-	padding: 10px;
 	flex: 0 0 100%;
 
 	img {

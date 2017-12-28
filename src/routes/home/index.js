@@ -22,6 +22,7 @@ const InnerContainer = styled.div`
 	display: flex;
 	flex-flow: row wrap;
 	align-content: space-between;
+	padding: 0 20px;
 `;
 
 const Home = () => (
