@@ -26,7 +26,7 @@ const InnerContainer = styled.div`
 `;
 
 const Home = () => (
-	<Container fullHeight class={style.main}>
+	<Container fullHeight class={style.main} paddingVertical>
 		<InnerContainer>
 			<Fireworks />
 			<Logo />

@@ -1,7 +1,9 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
+import '../style/fonts';
 import Home from '../routes/home';
+import Container from '../components/Container';
 
 export default class App extends Component {
 
@@ -15,11 +17,11 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<div id="app">
+			<Container fullHeight>
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 				</Router>
-			</div>
+			</Container>
 		);
 	}
 }

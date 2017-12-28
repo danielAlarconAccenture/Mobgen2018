@@ -238,9 +238,34 @@ module.exports = ReactPropTypesSecret;
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
-// EXTERNAL MODULE: ./style/index.css
-var style_0 = __webpack_require__("rq4c");
-var style_default = /*#__PURE__*/__webpack_require__.n(style_0);
+// EXTERNAL MODULE: ../node_modules/styled-components/dist/styled-components.es.js
+var styled_components_es = __webpack_require__("X5xa");
+
+// CONCATENATED MODULE: ./style/media.js
+var _templateObject = _taggedTemplateLiteralLoose(['\n\t\t@media (max-width: ', 'em) {\n\t\t\t', ';\n\t\t}\n\t'], ['\n\t\t@media (max-width: ', 'em) {\n\t\t\t', ';\n\t\t}\n\t']);
+
+function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+var sizes = {
+	giant: 1170,
+	desktop: 992,
+	tablet: 768,
+	phone: 376
+};
+
+// iterate through the sizes and create a media template
+var media = Object.keys(sizes).reduce(function (accumulator, label) {
+	// use em in breakpoints to work properly cross-browser and support users
+	// changing their browsers font-size: https://zellwk.com/blog/media-query-units/
+	var emSize = sizes[label] / 16;
+	accumulator[label] = function () {
+		return Object(styled_components_es["a" /* css */])(_templateObject, emSize, styled_components_es["a" /* css */].apply(undefined, arguments));
+	};
+	return accumulator;
+}, {});
+// CONCATENATED MODULE: ./style/index.js
 
 // EXTERNAL MODULE: ../node_modules/preact/dist/preact.min.js
 var preact_min = __webpack_require__("KM04");
@@ -616,20 +641,40 @@ preact_router_es_Router.Link = preact_router_es_Link;
 
 /* harmony default export */ var preact_router_es = (preact_router_es_Router);
 //# sourceMappingURL=preact-router.es.js.map
-// EXTERNAL MODULE: ../node_modules/styled-components/dist/styled-components.es.js
-var styled_components_es = __webpack_require__("X5xa");
+// EXTERNAL MODULE: ./assets/fonts/Graphik-Black.ttf
+var Graphik_Black = __webpack_require__("r39k");
+var Graphik_Black_default = /*#__PURE__*/__webpack_require__.n(Graphik_Black);
 
+// EXTERNAL MODULE: ./assets/fonts/Graphik-Light.ttf
+var Graphik_Light = __webpack_require__("Q7JY");
+var Graphik_Light_default = /*#__PURE__*/__webpack_require__.n(Graphik_Light);
+
+// CONCATENATED MODULE: ./style/fonts.js
+var fonts__templateObject = fonts__taggedTemplateLiteralLoose(['\n  @font-face {\n    font-family: \'GraphikBlack\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n  @font-face {\n    font-family: \'GraphikLight\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n'], ['\n  @font-face {\n    font-family: \'GraphikBlack\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n  @font-face {\n    font-family: \'GraphikLight\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n']);
+
+function fonts__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+
+
+Object(styled_components_es["c" /* injectGlobal */])(fonts__templateObject, Graphik_Black_default.a, Graphik_Black_default.a, Graphik_Black_default.a, Graphik_Light_default.a, Graphik_Light_default.a, Graphik_Light_default.a);
 // CONCATENATED MODULE: ./components/H3/index.js
-var _templateObject = _taggedTemplateLiteralLoose(['\n\tmargin: 0;\n\tfont-size: 2.6rem;\n\tfont-weight: bold;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tmin-height: 24px;\n'], ['\n\tmargin: 0;\n\tfont-size: 2.6rem;\n\tfont-weight: bold;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tmin-height: 24px;\n']);
+var H3__templateObject = H3__taggedTemplateLiteralLoose(['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 2.6rem;\n\t', ' ', ';\n'], ['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 2.6rem;\n\t', ' ', ';\n']),
+    _templateObject2 = H3__taggedTemplateLiteralLoose(['font-size: 2.4rem;'], ['font-size: 2.4rem;']),
+    _templateObject3 = H3__taggedTemplateLiteralLoose(['font-size: 2.2rem;'], ['font-size: 2.2rem;']);
 
 
 
-function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+function H3__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
 
-var StyledH3 = styled_components_es["a" /* default */].h3(_templateObject);
+
+var StyledH3 = styled_components_es["b" /* default */].h3(H3__templateObject, media.tablet(_templateObject2), media.phone(_templateObject3));
 
 var H3_H3 = function H3(_ref) {
 	var text = _ref.text,
@@ -643,7 +688,9 @@ var H3_H3 = function H3(_ref) {
 
 /* harmony default export */ var components_H3 = (H3_H3);
 // CONCATENATED MODULE: ./components/Subtitle/index.js
-var Subtitle__templateObject = Subtitle__taggedTemplateLiteralLoose(['\n\tfont-size: 1.4rem;\n\tletter-spacing: 2px;\n'], ['\n\tfont-size: 1.4rem;\n\tletter-spacing: 2px;\n']);
+var Subtitle__templateObject = Subtitle__taggedTemplateLiteralLoose(['\n\tletter-spacing: 2px;\n\tfont-family: \'GraphikLight\';\n\tfont-size: 1.2em;\n\t', ' ', ';\n'], ['\n\tletter-spacing: 2px;\n\tfont-family: \'GraphikLight\';\n\tfont-size: 1.2em;\n\t', ' ', ';\n']),
+    Subtitle__templateObject2 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1.2rem;'], ['font-size: 1.2rem;']),
+    Subtitle__templateObject3 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1rem;'], ['font-size: 1rem;']);
 
 
 
@@ -652,7 +699,8 @@ function Subtitle__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw;
 
 
 
-var StyledParagraph = styled_components_es["a" /* default */].p(Subtitle__templateObject);
+
+var StyledParagraph = styled_components_es["b" /* default */].p(Subtitle__templateObject, media.tablet(Subtitle__templateObject2), media.phone(Subtitle__templateObject3));
 
 var Subtitle_Subtitle = function Subtitle(_ref) {
 	var text = _ref.text;
@@ -675,14 +723,14 @@ var Image_Image = function Image(_ref) {
 
 /* harmony default export */ var components_Image = (Image_Image);
 // CONCATENATED MODULE: ./routes/home/AlignEndWrap.js
-var AlignEndWrap__templateObject = AlignEndWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-end;\n'], ['\n\talign-self: flex-end;\n']);
+var AlignEndWrap__templateObject = AlignEndWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-end;\n\tmargin: 10px 0;\n'], ['\n\talign-self: flex-end;\n\tmargin: 10px 0;\n']);
 
 function AlignEndWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
 
-/* harmony default export */ var AlignEndWrap = (styled_components_es["a" /* default */].div(AlignEndWrap__templateObject));
+/* harmony default export */ var AlignEndWrap = (styled_components_es["b" /* default */].div(AlignEndWrap__templateObject));
 // EXTERNAL MODULE: ../node_modules/animejs/anime.min.js
 var anime_min = __webpack_require__("NQR3");
 var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
@@ -865,13 +913,9 @@ var Fireworks_Fireworks = function (_Component) {
 	};
 
 	Fireworks.prototype.render = function render() {
-		var StyledCanvas = styled_components_es["a" /* default */].canvas(Fireworks__templateObject);
+		var StyledCanvas = styled_components_es["b" /* default */].canvas(Fireworks__templateObject);
 
-		return Object(preact_min["h"])(
-			'div',
-			null,
-			Object(preact_min["h"])(StyledCanvas, { className: 'fireworks' })
-		);
+		return Object(preact_min["h"])(StyledCanvas, { className: 'fireworks' });
 	};
 
 	return Fireworks;
@@ -879,14 +923,14 @@ var Fireworks_Fireworks = function (_Component) {
 
 
 // CONCATENATED MODULE: ./routes/home/AlignStartWrap.js
-var AlignStartWrap__templateObject = AlignStartWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n'], ['\n\talign-self: flex-start;\n']);
+var AlignStartWrap__templateObject = AlignStartWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\tmargin: 10px 0;\n'], ['\n\talign-self: flex-start;\n\tmargin: 10px 0;\n']);
 
 function AlignStartWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
 
-/* harmony default export */ var AlignStartWrap = (styled_components_es["a" /* default */].div(AlignStartWrap__templateObject));
+/* harmony default export */ var AlignStartWrap = (styled_components_es["b" /* default */].div(AlignStartWrap__templateObject));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap.js
 var NewYearWrap__templateObject = NewYearWrap__taggedTemplateLiteralLoose(['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\twidth: 100%;\n\t\theight: auto;\n\t}\n'], ['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\twidth: 100%;\n\t\theight: auto;\n\t}\n']);
 
@@ -895,25 +939,28 @@ function NewYearWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = r
 
 
 
-/* harmony default export */ var NewYearWrap = (styled_components_es["a" /* default */].div(NewYearWrap__templateObject));
+/* harmony default export */ var NewYearWrap = (styled_components_es["b" /* default */].div(NewYearWrap__templateObject));
 // EXTERNAL MODULE: ./routes/home/style.css
 var home_style = __webpack_require__("ZAL5");
-var home_style_default = /*#__PURE__*/__webpack_require__.n(home_style);
+var style_default = /*#__PURE__*/__webpack_require__.n(home_style);
 
 // CONCATENATED MODULE: ./components/Container/index.js
-var Container__templateObject = Container__taggedTemplateLiteralLoose(['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: 20px 0;\n'], ['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: 20px 0;\n']);
+var Container__templateObject = Container__taggedTemplateLiteralLoose(['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: ', ';\n'], ['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: ', ';\n']);
 
 function Container__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
 
-var Container = styled_components_es["a" /* default */].div(Container__templateObject, function (_ref) {
+var Container = styled_components_es["b" /* default */].div(Container__templateObject, function (_ref) {
 	var fullHeight = _ref.fullHeight;
 	return fullHeight ? '100%' : 'auto';
 }, function (_ref2) {
 	var fullWidth = _ref2.fullWidth;
 	return fullWidth ? '100%' : 'auto';
+}, function (_ref3) {
+	var paddingVertical = _ref3.paddingVertical;
+	return paddingVertical ? '20px 0' : 'auto';
 });
 
 /* harmony default export */ var components_Container = (Container);
@@ -928,7 +975,7 @@ function Logo__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 
 
-var Wrap = styled_components_es["a" /* default */].div(Logo__templateObject);
+var Wrap = styled_components_es["b" /* default */].div(Logo__templateObject);
 
 var Logo__ref = Object(preact_min["h"])(
 	Wrap,
@@ -943,7 +990,7 @@ var Logo = function Logo() {
 /* harmony default export */ var home_Logo = (Logo);
 // CONCATENATED MODULE: ./routes/home/index.js
 var home__templateObject = home__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n'], ['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n']),
-    _templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n']);
+    home__templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n']);
 
 
 
@@ -962,9 +1009,9 @@ function home__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 
 
-var SubtitleWrap = styled_components_es["a" /* default */].div(home__templateObject);
+var SubtitleWrap = styled_components_es["b" /* default */].div(home__templateObject);
 
-var InnerContainer = styled_components_es["a" /* default */].div(_templateObject2);
+var InnerContainer = styled_components_es["b" /* default */].div(home__templateObject2);
 
 var home__ref = Object(preact_min["h"])(Fireworks_Fireworks, null);
 
@@ -981,7 +1028,7 @@ var _ref4 = Object(preact_min["h"])(
 var home_Home = function Home() {
 	return Object(preact_min["h"])(
 		components_Container,
-		{ fullHeight: true, 'class': home_style_default.a.main },
+		{ fullHeight: true, 'class': style_default.a.main, paddingVertical: true },
 		Object(preact_min["h"])(
 			InnerContainer,
 			null,
@@ -993,13 +1040,13 @@ var home_Home = function Home() {
 				Object(preact_min["h"])(
 					AlignStartWrap,
 					null,
-					Object(preact_min["h"])(components_H3, { text: 'MAKE', style: home_style_default.a.make })
+					Object(preact_min["h"])(components_H3, { text: 'MAKE', style: style_default.a.make })
 				),
 				_ref3,
 				Object(preact_min["h"])(
 					AlignEndWrap,
 					null,
-					Object(preact_min["h"])(components_H3, { 'class': home_style_default.a.spark, text: 'SPARK' })
+					Object(preact_min["h"])(components_H3, { 'class': style_default.a.spark, text: 'SPARK' })
 				)
 			),
 			_ref4
@@ -1016,6 +1063,8 @@ function app__classCallCheck(instance, Constructor) { if (!(instance instanceof 
 function app__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function app__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
 
 
 
@@ -1049,8 +1098,8 @@ var app_App = function (_Component) {
 
 	App.prototype.render = function render() {
 		return Object(preact_min["h"])(
-			'div',
-			{ id: 'app' },
+			components_Container,
+			{ fullHeight: true },
 			Object(preact_min["h"])(
 				preact_router_es_Router,
 				{ onChange: this.handleRoute },
@@ -1699,6 +1748,13 @@ $jscomp.polyfill = function (e, r, p, m) {
 
 /***/ }),
 
+/***/ "Q7JY":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "a86d0a9966e670c5f56e2782f0b8932d.ttf";
+
+/***/ }),
+
 /***/ "UQex":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1746,9 +1802,9 @@ module.exports = emptyFunction;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* unused harmony export css */
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return css; });
 /* unused harmony export keyframes */
-/* unused harmony export injectGlobal */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return injectGlobal; });
 /* unused harmony export ThemeProvider */
 /* unused harmony export withTheme */
 /* unused harmony export ServerStyleSheet */
@@ -3451,7 +3507,7 @@ var keyframes = _keyframes(generateAlphabeticName, stringifyRules, css);
 var injectGlobal = _injectGlobal(stringifyRules, css);
 var styled = _styled(StyledComponent, constructWithOptions);
 
-/* harmony default export */ __webpack_exports__["a"] = (styled);
+/* harmony default export */ __webpack_exports__["b"] = (styled);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("pv+l")(module)))
 
 /***/ }),
@@ -5914,10 +5970,10 @@ module.exports = function (originalModule) {
 
 /***/ }),
 
-/***/ "rq4c":
-/***/ (function(module, exports) {
+/***/ "r39k":
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "893fdd1c4e7a6b351aed7306ecc5bec4.ttf";
 
 /***/ }),
 

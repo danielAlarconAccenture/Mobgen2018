@@ -162,10 +162,6 @@ export default class Fireworks extends Component {
 			position: absolute;
 		`;
 
-		return (
-			<div>
-				<StyledCanvas className="fireworks" />
-			</div>
-		);
+		return <StyledCanvas className="fireworks" />;
 	}
 }
