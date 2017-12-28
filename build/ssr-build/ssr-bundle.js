@@ -918,7 +918,7 @@ var Container = styled_components_es["a" /* default */].div(Container__templateO
 
 /* harmony default export */ var components_Container = (Container);
 // CONCATENATED MODULE: ./routes/home/Logo.js
-var Logo__templateObject = Logo__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n'], ['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n']);
+var Logo__templateObject = Logo__taggedTemplateLiteralLoose(['\n\tpadding: 10px;\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n'], ['\n\tpadding: 10px;\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n']);
 
 
 
@@ -943,7 +943,7 @@ var Logo = function Logo() {
 /* harmony default export */ var home_Logo = (Logo);
 // CONCATENATED MODULE: ./routes/home/index.js
 var home__templateObject = home__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n'], ['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n']),
-    _templateObject2 = home__taggedTemplateLiteralLoose(['\n\tpadding: 20px;\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n'], ['\n\tpadding: 20px;\n\theight: 100vh;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n']);
+    _templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n']);
 
 
 
@@ -955,7 +955,6 @@ function home__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 
 
-// import Canvas from './Canvas';
 
 
 

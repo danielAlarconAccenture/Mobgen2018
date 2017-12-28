@@ -4,7 +4,6 @@ import H3 from '../../components/H3';
 import Subtitle from '../../components/Subtitle';
 import Image from '../../components/Image';
 import AlignEndWrap from './AlignEndWrap';
-// import Canvas from './Canvas';
 import Fireworks from '../../components/Fireworks';
 import AlignStartWrap from './AlignStartWrap';
 import NewYearWrap from './NewYearWrap';
@@ -19,8 +18,7 @@ const SubtitleWrap = styled.div`
 `;
 
 const InnerContainer = styled.div`
-	padding: 20px;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	flex-flow: row wrap;
 	align-content: space-between;
