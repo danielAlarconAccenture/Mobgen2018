@@ -19,6 +19,7 @@ const InnerContainer = styled.div`
 	flex-flow: row wrap;
 	align-content: space-between;
 	padding: 0 20px;
+	pointer-events: none;
 `;
 
 export default class Home extends Component {
@@ -28,7 +29,6 @@ export default class Home extends Component {
 	};
 
 	handleCounter = () => {
-		console.log(this.state);
 		const { counter } = this.state;
 		counter === 10
 			? this.show606()
