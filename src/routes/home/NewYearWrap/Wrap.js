@@ -13,8 +13,8 @@ export default styled.div`
 	justify-content: center;
 
 	img {
-		max-width: 100%;
 		height: auto;
-		max-height: 150px;
+		width: 441px;
+		max-width: 100%;
 	}
 `;
