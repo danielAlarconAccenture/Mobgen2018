@@ -1,11 +1,7 @@
-import { h } from 'preact';
+import { h, Component } from 'preact';
 import styled from 'styled-components';
-import H3 from '../../components/H3';
 import Subtitle from '../../components/Subtitle';
-import Image from '../../components/Image';
-import AlignEndWrap from './AlignEndWrap';
 import Fireworks from '../../components/Fireworks';
-import AlignStartWrap from './AlignStartWrap';
 import NewYearWrap from './NewYearWrap';
 import style from './style';
 import Container from '../../components/Container';
@@ -25,25 +21,47 @@ const InnerContainer = styled.div`
 	padding: 0 20px;
 `;
 
-const Home = () => (
-	<Container fullHeight class={style.main} paddingVertical>
-		<InnerContainer>
-			<Fireworks />
-			<Logo />
-			<NewYearWrap>
-				<AlignStartWrap>
-					<H3 text="MAKE" style={style.make} />
-				</AlignStartWrap>
-				<Image src="../../assets/images/2018.png" />
-				<AlignEndWrap>
-					<H3 class={style.spark} text="SPARK" />
-				</AlignEndWrap>
-			</NewYearWrap>
-			<SubtitleWrap>
-				<Subtitle text="BEST WISHES FROM MOBGEN ❤️" />
-			</SubtitleWrap>
-		</InnerContainer>
-	</Container>
-);
+export default class Home extends Component {
+	state = {
+		counter: 0,
+		doWeGotBalls: false
+	};
 
-export default Home;
+	handleCounter = () => {
+		console.log(this.state);
+		const { counter } = this.state;
+		counter === 10
+			? this.show606()
+			: this.setState(() => ({
+				counter: counter + 1,
+				doWeGotBalls: false
+			}));
+	};
+
+	show606 = () => {
+		this.setState(() => ({
+			...this.state,
+			counter: 0,
+			doWeGotBalls: true
+		}));
+	};
+
+	// shouldComponentUpdate(nextProps, nextState) {
+	// 	return nextState.counter === 10;
+	// }
+
+	render(props, state) {
+		return (
+			<Container fullHeight class={style.main} paddingVertical>
+				<InnerContainer onClick={this.handleCounter}>
+					<Fireworks />
+					<Logo />
+					<NewYearWrap doWeGotBalls={state.doWeGotBalls} />
+					<SubtitleWrap>
+						<Subtitle text="BEST WISHES FROM MOBGEN ❤️" />
+					</SubtitleWrap>
+				</InnerContainer>
+			</Container>
+		);
+	}
+}

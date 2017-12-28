@@ -661,36 +661,10 @@ function fonts__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; re
 
 
 Object(styled_components_es["c" /* injectGlobal */])(fonts__templateObject, Graphik_Black_default.a, Graphik_Black_default.a, Graphik_Black_default.a, Graphik_Light_default.a, Graphik_Light_default.a, Graphik_Light_default.a);
-// CONCATENATED MODULE: ./components/H3/index.js
-var H3__templateObject = H3__taggedTemplateLiteralLoose(['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 2.6rem;\n\t', ' ', ';\n'], ['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 2.6rem;\n\t', ' ', ';\n']),
-    _templateObject2 = H3__taggedTemplateLiteralLoose(['font-size: 2.4rem;'], ['font-size: 2.4rem;']),
-    _templateObject3 = H3__taggedTemplateLiteralLoose(['font-size: 2.2rem;'], ['font-size: 2.2rem;']);
-
-
-
-function H3__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-
-var StyledH3 = styled_components_es["b" /* default */].h3(H3__templateObject, media.tablet(_templateObject2), media.phone(_templateObject3));
-
-var H3_H3 = function H3(_ref) {
-	var text = _ref.text,
-	    style = _ref.style;
-	return Object(preact_min["h"])(
-		StyledH3,
-		{ 'class': style },
-		text
-	);
-};
-
-/* harmony default export */ var components_H3 = (H3_H3);
 // CONCATENATED MODULE: ./components/Subtitle/index.js
 var Subtitle__templateObject = Subtitle__taggedTemplateLiteralLoose(['\n\tletter-spacing: 2px;\n\tfont-family: \'GraphikLight\';\n\tfont-size: 1.2em;\n\t', ' ', ';\n'], ['\n\tletter-spacing: 2px;\n\tfont-family: \'GraphikLight\';\n\tfont-size: 1.2em;\n\t', ' ', ';\n']),
-    Subtitle__templateObject2 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1.2rem;'], ['font-size: 1.2rem;']),
-    Subtitle__templateObject3 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1rem;'], ['font-size: 1rem;']);
+    _templateObject2 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1.2rem;'], ['font-size: 1.2rem;']),
+    _templateObject3 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1rem;'], ['font-size: 1rem;']);
 
 
 
@@ -700,7 +674,7 @@ function Subtitle__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw;
 
 
 
-var StyledParagraph = styled_components_es["b" /* default */].p(Subtitle__templateObject, media.tablet(Subtitle__templateObject2), media.phone(Subtitle__templateObject3));
+var StyledParagraph = styled_components_es["b" /* default */].p(Subtitle__templateObject, media.tablet(_templateObject2), media.phone(_templateObject3));
 
 var Subtitle_Subtitle = function Subtitle(_ref) {
 	var text = _ref.text;
@@ -712,25 +686,6 @@ var Subtitle_Subtitle = function Subtitle(_ref) {
 };
 
 /* harmony default export */ var components_Subtitle = (Subtitle_Subtitle);
-// CONCATENATED MODULE: ./components/Image/index.js
-
-
-
-var Image_Image = function Image(_ref) {
-  var src = _ref.src;
-  return Object(preact_min["h"])('img', { src: src });
-};
-
-/* harmony default export */ var components_Image = (Image_Image);
-// CONCATENATED MODULE: ./routes/home/AlignEndWrap.js
-var AlignEndWrap__templateObject = AlignEndWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-end;\n\tmargin: 10px 0;\n'], ['\n\talign-self: flex-end;\n\tmargin: 10px 0;\n']);
-
-function AlignEndWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-/* harmony default export */ var AlignEndWrap = (styled_components_es["b" /* default */].div(AlignEndWrap__templateObject));
 // EXTERNAL MODULE: ../node_modules/animejs/anime.min.js
 var anime_min = __webpack_require__("NQR3");
 var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
@@ -786,6 +741,7 @@ var Fireworks_Fireworks = function (_Component) {
 	};
 
 	Fireworks.prototype.setCanvasSize = function setCanvasSize() {
+		console.log('setting canvas size');
 		this.canvasEl.width = window.innerWidth * 2;
 		this.canvasEl.height = window.innerHeight * 2;
 		this.canvasEl.style.width = window.innerWidth + 'px';
@@ -912,6 +868,10 @@ var Fireworks_Fireworks = function (_Component) {
 		this.init();
 	};
 
+	Fireworks.prototype.shouldComponentUpdate = function shouldComponentUpdate() {
+		return false;
+	};
+
 	Fireworks.prototype.render = function render() {
 		var StyledCanvas = styled_components_es["b" /* default */].canvas(Fireworks__templateObject);
 
@@ -922,7 +882,52 @@ var Fireworks_Fireworks = function (_Component) {
 }(preact_min["Component"]);
 
 
-// CONCATENATED MODULE: ./routes/home/AlignStartWrap.js
+// CONCATENATED MODULE: ./components/H3/index.js
+var H3__templateObject = H3__taggedTemplateLiteralLoose(['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 2.6rem;\n\t', ' ', ';\n'], ['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 2.6rem;\n\t', ' ', ';\n']),
+    H3__templateObject2 = H3__taggedTemplateLiteralLoose(['font-size: 2.4rem;'], ['font-size: 2.4rem;']),
+    H3__templateObject3 = H3__taggedTemplateLiteralLoose(['font-size: 2.2rem;'], ['font-size: 2.2rem;']);
+
+
+
+function H3__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+var StyledH3 = styled_components_es["b" /* default */].h3(H3__templateObject, media.tablet(H3__templateObject2), media.phone(H3__templateObject3));
+
+var H3_H3 = function H3(_ref) {
+	var text = _ref.text,
+	    style = _ref.style;
+	return Object(preact_min["h"])(
+		StyledH3,
+		{ 'class': style },
+		text
+	);
+};
+
+/* harmony default export */ var components_H3 = (H3_H3);
+// CONCATENATED MODULE: ./components/Image/index.js
+
+
+
+var Image_Image = function Image(_ref) {
+  var src = _ref.src;
+  return Object(preact_min["h"])('img', { src: src });
+};
+
+/* harmony default export */ var components_Image = (Image_Image);
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/AlignEndWrap.js
+var AlignEndWrap__templateObject = AlignEndWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-end;\n\tmargin: 10px 0;\n'], ['\n\talign-self: flex-end;\n\tmargin: 10px 0;\n']);
+
+function AlignEndWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+/* harmony default export */ var AlignEndWrap = (styled_components_es["b" /* default */].div(AlignEndWrap__templateObject));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/AlignStartWrap.js
 var AlignStartWrap__templateObject = AlignStartWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\tmargin: 10px 0;\n'], ['\n\talign-self: flex-start;\n\tmargin: 10px 0;\n']);
 
 function AlignStartWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
@@ -931,15 +936,50 @@ function AlignStartWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw 
 
 
 /* harmony default export */ var AlignStartWrap = (styled_components_es["b" /* default */].div(AlignStartWrap__templateObject));
-// CONCATENATED MODULE: ./routes/home/NewYearWrap.js
-var NewYearWrap__templateObject = NewYearWrap__taggedTemplateLiteralLoose(['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\twidth: 100%;\n\t\theight: auto;\n\t}\n'], ['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\twidth: 100%;\n\t\theight: auto;\n\t}\n']);
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/Wrap.js
+var Wrap__templateObject = Wrap__taggedTemplateLiteralLoose(['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\tmax-width: 100%;\n\t\theight: auto;\n\t\tmax-height: 150px;\n\t}\n'], ['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\tmax-width: 100%;\n\t\theight: auto;\n\t\tmax-height: 150px;\n\t}\n']);
 
-function NewYearWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
+function Wrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
-/* harmony default export */ var NewYearWrap = (styled_components_es["b" /* default */].div(NewYearWrap__templateObject));
+
+
+/* harmony default export */ var Wrap = (styled_components_es["b" /* default */].div(Wrap__templateObject));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/index.js
+
+
+
+
+
+
+
+
+var _ref2 = Object(preact_min["h"])(
+	AlignStartWrap,
+	null,
+	Object(preact_min["h"])(components_H3, { text: 'MAKE' })
+);
+
+var _ref3 = Object(preact_min["h"])(
+	AlignEndWrap,
+	null,
+	Object(preact_min["h"])(components_H3, { text: 'SPARK' })
+);
+
+var NewYearWrap_NewYearWrap = function NewYearWrap(_ref) {
+	var doWeGotBalls = _ref.doWeGotBalls;
+
+	var imgUrl = doWeGotBalls ? '606' : '2018';
+	return Object(preact_min["h"])(
+		Wrap,
+		null,
+		_ref2,
+		Object(preact_min["h"])(components_Image, { src: '../../assets/images/' + imgUrl + '.png' }),
+		_ref3
+	);
+};
+
+/* harmony default export */ var home_NewYearWrap = (NewYearWrap_NewYearWrap);
 // EXTERNAL MODULE: ./routes/home/style.css
 var home_style = __webpack_require__("ZAL5");
 var style_default = /*#__PURE__*/__webpack_require__.n(home_style);
@@ -975,10 +1015,10 @@ function Logo__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 
 
-var Wrap = styled_components_es["b" /* default */].div(Logo__templateObject);
+var Logo_Wrap = styled_components_es["b" /* default */].div(Logo__templateObject);
 
 var Logo__ref = Object(preact_min["h"])(
-	Wrap,
+	Logo_Wrap,
 	null,
 	Object(preact_min["h"])(components_Image, { src: '../../assets/images/logo.png' })
 );
@@ -989,16 +1029,20 @@ var Logo = function Logo() {
 
 /* harmony default export */ var home_Logo = (Logo);
 // CONCATENATED MODULE: ./routes/home/index.js
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var home__templateObject = home__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n'], ['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n']),
     home__templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n']);
 
 
 
+function home__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function home__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function home__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 function home__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
 
 
 
@@ -1015,46 +1059,72 @@ var InnerContainer = styled_components_es["b" /* default */].div(home__templateO
 
 var home__ref = Object(preact_min["h"])(Fireworks_Fireworks, null);
 
-var _ref2 = Object(preact_min["h"])(home_Logo, null);
+var home__ref2 = Object(preact_min["h"])(home_Logo, null);
 
-var _ref3 = Object(preact_min["h"])(components_Image, { src: '../../assets/images/2018.png' });
-
-var _ref4 = Object(preact_min["h"])(
+var home__ref3 = Object(preact_min["h"])(
 	SubtitleWrap,
 	null,
 	Object(preact_min["h"])(components_Subtitle, { text: 'BEST WISHES FROM MOBGEN \u2764\uFE0F' })
 );
 
-var home_Home = function Home() {
-	return Object(preact_min["h"])(
-		components_Container,
-		{ fullHeight: true, 'class': style_default.a.main, paddingVertical: true },
-		Object(preact_min["h"])(
-			InnerContainer,
-			null,
-			home__ref,
-			_ref2,
-			Object(preact_min["h"])(
-				NewYearWrap,
-				null,
-				Object(preact_min["h"])(
-					AlignStartWrap,
-					null,
-					Object(preact_min["h"])(components_H3, { text: 'MAKE', style: style_default.a.make })
-				),
-				_ref3,
-				Object(preact_min["h"])(
-					AlignEndWrap,
-					null,
-					Object(preact_min["h"])(components_H3, { 'class': style_default.a.spark, text: 'SPARK' })
-				)
-			),
-			_ref4
-		)
-	);
-};
+var home_Home = function (_Component) {
+	home__inherits(Home, _Component);
 
-/* harmony default export */ var home = (home_Home);
+	function Home() {
+		var _temp, _this, _ret;
+
+		home__classCallCheck(this, Home);
+
+		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+			args[_key] = arguments[_key];
+		}
+
+		return _ret = (_temp = (_this = home__possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.state = {
+			counter: 0,
+			doWeGotBalls: false
+		}, _this.handleCounter = function () {
+			console.log(_this.state);
+			var counter = _this.state.counter;
+
+			counter === 10 ? _this.show606() : _this.setState(function () {
+				return {
+					counter: counter + 1,
+					doWeGotBalls: false
+				};
+			});
+		}, _this.show606 = function () {
+			_this.setState(function () {
+				return _extends({}, _this.state, {
+					counter: 0,
+					doWeGotBalls: true
+				});
+			});
+		}, _temp), home__possibleConstructorReturn(_this, _ret);
+	}
+
+	// shouldComponentUpdate(nextProps, nextState) {
+	// 	return nextState.counter === 10;
+	// }
+
+	Home.prototype.render = function render(props, state) {
+		return Object(preact_min["h"])(
+			components_Container,
+			{ fullHeight: true, 'class': style_default.a.main, paddingVertical: true },
+			Object(preact_min["h"])(
+				InnerContainer,
+				{ onClick: this.handleCounter },
+				home__ref,
+				home__ref2,
+				Object(preact_min["h"])(home_NewYearWrap, { doWeGotBalls: state.doWeGotBalls }),
+				home__ref3
+			)
+		);
+	};
+
+	return Home;
+}(preact_min["Component"]);
+
+
 // CONCATENATED MODULE: ./components/app.js
 
 
@@ -1071,7 +1141,7 @@ function app__inherits(subClass, superClass) { if (typeof superClass !== "functi
 
 
 
-var app__ref = Object(preact_min["h"])(home, { path: '/' });
+var app__ref = Object(preact_min["h"])(home_Home, { path: '/' });
 
 var app_App = function (_Component) {
 	app__inherits(App, _Component);

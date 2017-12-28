@@ -39,6 +39,7 @@ export default class Fireworks extends Component {
 	}
 
 	setCanvasSize() {
+		console.log('setting canvas size');
 		this.canvasEl.width = window.innerWidth * 2;
 		this.canvasEl.height = window.innerHeight * 2;
 		this.canvasEl.style.width = `${window.innerWidth}px`;
@@ -155,6 +156,10 @@ export default class Fireworks extends Component {
 
 	componentDidMount() {
 		this.init();
+	}
+
+	shouldComponentUpdate() {
+		return false;
 	}
 
 	render() {
