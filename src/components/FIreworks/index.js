@@ -160,6 +160,10 @@ export default class Fireworks extends Component {
 	render() {
 		const StyledCanvas = styled.canvas`
 			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
 		`;
 
 		return <StyledCanvas className="fireworks" />;

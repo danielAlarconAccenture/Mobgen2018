@@ -736,7 +736,7 @@ var anime_min = __webpack_require__("NQR3");
 var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
 
 // CONCATENATED MODULE: ./components/Fireworks/index.js
-var Fireworks__templateObject = Fireworks__taggedTemplateLiteralLoose(['\n\t\t\tposition: absolute;\n\t\t'], ['\n\t\t\tposition: absolute;\n\t\t']);
+var Fireworks__templateObject = Fireworks__taggedTemplateLiteralLoose(['\n\t\t\tposition: absolute;\n\t\t\tleft: 0;\n\t\t\tright: 0;\n\t\t\tbottom: 0;\n\t\t\ttop: 0;\n\t\t'], ['\n\t\t\tposition: absolute;\n\t\t\tleft: 0;\n\t\t\tright: 0;\n\t\t\tbottom: 0;\n\t\t\ttop: 0;\n\t\t']);
 
 
 
