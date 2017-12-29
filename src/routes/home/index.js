@@ -22,24 +22,44 @@ const InnerContainer = styled.div`
 export default class Home extends Component {
 	state = {
 		counter: 0,
-		doWeGotBalls: false
+		doWeGotBalls: false,
+		shitSurprise: false
 	};
 
+	// function for checking if a number is a multiple of 10
+	multipleOfTen = number => number !== 0 && number % 10 === 0;
+
 	handleCounter = () => {
-		const { counter } = this.state;
-		counter === 10
+		const { counter, shitSurprise } = this.state;
+		if (shitSurprise) return;
+		if (counter === 100) {
+			this.showShitSurprise();
+			return;
+		}
+		// if it's multiple from 10
+		this.multipleOfTen(counter)
 			? this.show606()
 			: this.setState(() => ({
 				counter: counter + 1,
-				doWeGotBalls: false
+				doWeGotBalls: false,
+				shitSurprise: false
 			}));
 	};
 
 	show606 = () => {
+		this.setState(({ counter }) => ({
+			...this.state,
+			counter: counter + 1,
+			doWeGotBalls: true,
+			shitSurprise: false
+		}));
+	};
+
+	showShitSurprise = () => {
 		this.setState(() => ({
 			...this.state,
-			counter: 0,
-			doWeGotBalls: true
+			doWeGotBalls: false,
+			shitSurprise: true
 		}));
 	};
 
@@ -53,12 +73,15 @@ export default class Home extends Component {
 				fullHeight
 				class={style.main}
 				paddingVertical
-				backgroundColor="#000"
+				backgroundColor={COLORS.BLACK}
 			>
 				<InnerContainer onClick={this.handleCounter}>
 					<Fireworks />
 					<Logo />
-					<NewYearWrap doWeGotBalls={state.doWeGotBalls} />
+					<NewYearWrap
+						doWeGotBalls={state.doWeGotBalls}
+						shitSurprise={state.shitSurprise}
+					/>
 
 					<ClickForMagicWrap>
 						<Paragraph
@@ -66,7 +89,7 @@ export default class Home extends Component {
 							color={COLORS.GRAY}
 							fontSize="1rem"
 						/>
-						<Image src={`../../assets/images/press.gif`} />
+						<Image src={`../../assets/images/press-black.gif`} />
 					</ClickForMagicWrap>
 				</InnerContainer>
 			</Container>

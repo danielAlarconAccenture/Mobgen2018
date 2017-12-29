@@ -10,12 +10,20 @@ import SubtitleWrap from './SubtitleWrap';
 import { COLORS } from '../../../style';
 import SparkWrap from './SparkWrap';
 
-const NewYearWrap = ({ doWeGotBalls }) => {
-	const imgUrl = doWeGotBalls ? '606' : '2018';
+const selectBullShitImage = (doWeGotBalls, shitSurprise) => {
+	if (shitSurprise) return 'sparks';
+	if (doWeGotBalls) return '606';
+	return '2018';
+};
+
+const NewYearWrap = ({ doWeGotBalls, shitSurprise }) => {
+	const imgUrl = selectBullShitImage(doWeGotBalls, shitSurprise);
+	const topText = shitSurprise ? '100' : 'MAKE';
+	const bottomText = shitSurprise ? 'HOLY💩' : 'SPARK';
 	return (
 		<Wrap>
 			<TopWrap>
-				<H3 text="MAKE" color={COLORS.WHITE} />
+				<H3 text={topText} color={COLORS.WHITE} />
 			</TopWrap>
 			<Image src={`../../assets/images/${imgUrl}.png`} />
 			<BottomWrap>
@@ -26,7 +34,7 @@ const NewYearWrap = ({ doWeGotBalls }) => {
 					<Subtitle text={`THE MOBGEN TEAM`} color={COLORS.GRAY} />
 				</SubtitleWrap>
 				<SparkWrap>
-					<H3 text="SPARK" color={COLORS.WHITE} />
+					<H3 text={bottomText} color={COLORS.WHITE} />
 				</SparkWrap>
 			</BottomWrap>
 		</Wrap>

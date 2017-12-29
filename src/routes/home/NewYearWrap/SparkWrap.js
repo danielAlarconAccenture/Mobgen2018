@@ -4,5 +4,7 @@ import { media } from '../../../style';
 
 export default styled.div`
 	position: relative;
-	bottom: 42px;
+	bottom: 26px;
+	${media.tablet`
+	bottom: 34px;`} ${media.phone`bottom: 26px;`};
 `;

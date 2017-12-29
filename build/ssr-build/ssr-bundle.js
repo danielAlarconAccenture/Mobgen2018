@@ -269,7 +269,7 @@ var media = Object.keys(sizes).reduce(function (accumulator, label) {
 var COLORS = {
 	GRAY: '#7F7F7F',
 	WHITE: '#FFFFFF',
-	BLACK: '#000000',
+	BLACK: '#161616',
 	ORANGE: '#fe5000'
 };
 // CONCATENATED MODULE: ./style/index.js
@@ -1006,7 +1006,7 @@ function Stripe__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; r
 
 /* harmony default export */ var Stripe = (styled_components_es["b" /* default */].span(Stripe__templateObject, COLORS.ORANGE));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/BottomWrap.js
-var BottomWrap__templateObject = BottomWrap__taggedTemplateLiteralLoose(['\n\talign-self: stretch;\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tz-index: 0;\n\t', ' ', ';\n'], ['\n\talign-self: stretch;\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tz-index: 0;\n\t', ' ', ';\n']),
+var BottomWrap__templateObject = BottomWrap__taggedTemplateLiteralLoose(['\n\talign-self: stretch;\n\tbottom: 30px;\n\tposition: relative;\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tz-index: 0;\n\t', ' ', ';\n'], ['\n\talign-self: stretch;\n\tbottom: 30px;\n\tposition: relative;\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tz-index: 0;\n\t', ' ', ';\n']),
     BottomWrap__templateObject2 = BottomWrap__taggedTemplateLiteralLoose(['\n\tmargin: 10px 0;'], ['\n\tmargin: 10px 0;']),
     BottomWrap__templateObject3 = BottomWrap__taggedTemplateLiteralLoose(['margin: 10px 0;'], ['margin: 10px 0;']);
 
@@ -1018,8 +1018,9 @@ function BottomWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = ra
 
 /* harmony default export */ var BottomWrap = (styled_components_es["b" /* default */].div(BottomWrap__templateObject, media.tablet(BottomWrap__templateObject2), media.phone(BottomWrap__templateObject3)));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/TopWrap.js
-var TopWrap__templateObject = TopWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\tposition: relative;\n\ttop: 32px;\n\t', ' ', ';\n'], ['\n\talign-self: flex-start;\n\tposition: relative;\n\ttop: 32px;\n\t', ' ', ';\n']),
-    TopWrap__templateObject2 = TopWrap__taggedTemplateLiteralLoose(['top: 25px;'], ['top: 25px;']);
+var TopWrap__templateObject = TopWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\tposition: relative;\n\ttop: 61px;\n\t', ' ', ';\n'], ['\n\talign-self: flex-start;\n\tposition: relative;\n\ttop: 61px;\n\t', ' ', ';\n']),
+    TopWrap__templateObject2 = TopWrap__taggedTemplateLiteralLoose(['top: 54;'], ['top: 54;']),
+    TopWrap__templateObject3 = TopWrap__taggedTemplateLiteralLoose(['top: 36px;'], ['top: 36px;']);
 
 function TopWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
@@ -1027,7 +1028,7 @@ function TopWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; 
 
 
 
-/* harmony default export */ var TopWrap = (styled_components_es["b" /* default */].div(TopWrap__templateObject, media.tablet(TopWrap__templateObject2), media.phone(TopWrap__templateObject2)));
+/* harmony default export */ var TopWrap = (styled_components_es["b" /* default */].div(TopWrap__templateObject, media.tablet(TopWrap__templateObject2), media.phone(TopWrap__templateObject3)));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/Wrap.js
 var Wrap__templateObject = Wrap__taggedTemplateLiteralLoose(['\n\tpointer-events: none;\n\tmax-width: 550px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\theight: auto;\n\t\twidth: 500px;\n\t\tmax-width: 100%;\n\t\tz-index: 1;\n\t}\n'], ['\n\tpointer-events: none;\n\tmax-width: 550px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\theight: auto;\n\t\twidth: 500px;\n\t\tmax-width: 100%;\n\t\tz-index: 1;\n\t}\n']);
 
@@ -1050,7 +1051,9 @@ function SubtitleWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = 
 
 /* harmony default export */ var SubtitleWrap = (styled_components_es["b" /* default */].div(SubtitleWrap__templateObject, media.tablet(SubtitleWrap__templateObject2), media.phone(SubtitleWrap__templateObject3)));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/SparkWrap.js
-var SparkWrap__templateObject = SparkWrap__taggedTemplateLiteralLoose(['\n\tposition: relative;\n\tbottom: 42px;\n'], ['\n\tposition: relative;\n\tbottom: 42px;\n']);
+var SparkWrap__templateObject = SparkWrap__taggedTemplateLiteralLoose(['\n\tposition: relative;\n\tbottom: 26px;\n\t', ' ', ';\n'], ['\n\tposition: relative;\n\tbottom: 26px;\n\t', ' ', ';\n']),
+    SparkWrap__templateObject2 = SparkWrap__taggedTemplateLiteralLoose(['\n\tbottom: 34px;'], ['\n\tbottom: 34px;']),
+    SparkWrap__templateObject3 = SparkWrap__taggedTemplateLiteralLoose(['bottom: 26px;'], ['bottom: 26px;']);
 
 function SparkWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
@@ -1058,7 +1061,7 @@ function SparkWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw
 
 
 
-/* harmony default export */ var SparkWrap = (styled_components_es["b" /* default */].div(SparkWrap__templateObject));
+/* harmony default export */ var SparkWrap = (styled_components_es["b" /* default */].div(SparkWrap__templateObject, media.tablet(SparkWrap__templateObject2), media.phone(SparkWrap__templateObject3)));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/index.js
 
 
@@ -1073,19 +1076,28 @@ function SparkWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw
 
 
 
+var selectBullShitImage = function selectBullShitImage(doWeGotBalls, shitSurprise) {
+	if (shitSurprise) return 'sparks';
+	if (doWeGotBalls) return '606';
+	return '2018';
+};
+
 var NewYearWrap__ref2 = Object(preact_min["h"])(Stripe, null);
 
 var NewYearWrap_NewYearWrap = function NewYearWrap(_ref) {
-	var doWeGotBalls = _ref.doWeGotBalls;
+	var doWeGotBalls = _ref.doWeGotBalls,
+	    shitSurprise = _ref.shitSurprise;
 
-	var imgUrl = doWeGotBalls ? '606' : '2018';
+	var imgUrl = selectBullShitImage(doWeGotBalls, shitSurprise);
+	var topText = shitSurprise ? '100' : 'MAKE';
+	var bottomText = shitSurprise ? 'HOLY💩' : 'SPARK';
 	return Object(preact_min["h"])(
 		Wrap,
 		null,
 		Object(preact_min["h"])(
 			TopWrap,
 			null,
-			Object(preact_min["h"])(components_H3, { text: 'MAKE', color: COLORS.WHITE })
+			Object(preact_min["h"])(components_H3, { text: topText, color: COLORS.WHITE })
 		),
 		Object(preact_min["h"])(components_Image, { src: '../../assets/images/' + imgUrl + '.png' }),
 		Object(preact_min["h"])(
@@ -1102,7 +1114,7 @@ var NewYearWrap_NewYearWrap = function NewYearWrap(_ref) {
 			Object(preact_min["h"])(
 				SparkWrap,
 				null,
-				Object(preact_min["h"])(components_H3, { text: 'SPARK', color: COLORS.WHITE })
+				Object(preact_min["h"])(components_H3, { text: bottomText, color: COLORS.WHITE })
 			)
 		)
 	);
@@ -1114,7 +1126,9 @@ var style = __webpack_require__("ZAL5");
 var style_default = /*#__PURE__*/__webpack_require__.n(style);
 
 // CONCATENATED MODULE: ./routes/home/Logo.js
-var Logo__templateObject = Logo__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 94px;\n\t}\n'], ['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 94px;\n\t}\n']);
+var Logo__templateObject = Logo__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 94px;\n\t\t', ' ', ';\n\t}\n'], ['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 94px;\n\t\t', ' ', ';\n\t}\n']),
+    Logo__templateObject2 = Logo__taggedTemplateLiteralLoose(['width: 70px;'], ['width: 70px;']),
+    Logo__templateObject3 = Logo__taggedTemplateLiteralLoose(['width: 40px;'], ['width: 40px;']);
 
 
 
@@ -1124,7 +1138,8 @@ function Logo__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 
 
-var Logo_Wrap = styled_components_es["b" /* default */].div(Logo__templateObject);
+
+var Logo_Wrap = styled_components_es["b" /* default */].div(Logo__templateObject, media.tablet(Logo__templateObject2), media.phone(Logo__templateObject3));
 
 var Logo__ref = Object(preact_min["h"])(
 	Logo_Wrap,
@@ -1166,9 +1181,9 @@ function home__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 var InnerContainer = styled_components_es["b" /* default */].div(home__templateObject);
 
-var home__ref = Object(preact_min["h"])(Fireworks_Fireworks, null);
+var home__ref2 = Object(preact_min["h"])(Fireworks_Fireworks, null);
 
-var home__ref2 = Object(preact_min["h"])(home_Logo, null);
+var _ref3 = Object(preact_min["h"])(home_Logo, null);
 
 var home_Home = function (_Component) {
 	home__inherits(Home, _Component);
@@ -1184,25 +1199,49 @@ var home_Home = function (_Component) {
 
 		return _ret = (_temp = (_this = home__possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.state = {
 			counter: 0,
-			doWeGotBalls: false
+			doWeGotBalls: false,
+			shitSurprise: false
+		}, _this.multipleOfTen = function (number) {
+			return number !== 0 && number % 10 === 0;
 		}, _this.handleCounter = function () {
-			var counter = _this.state.counter;
+			var _this$state = _this.state,
+			    counter = _this$state.counter,
+			    shitSurprise = _this$state.shitSurprise;
 
-			counter === 10 ? _this.show606() : _this.setState(function () {
+			if (shitSurprise) return;
+			if (counter === 100) {
+				_this.showShitSurprise();
+				return;
+			}
+			// if it's multiple from 10
+			_this.multipleOfTen(counter) ? _this.show606() : _this.setState(function () {
 				return {
 					counter: counter + 1,
-					doWeGotBalls: false
+					doWeGotBalls: false,
+					shitSurprise: false
 				};
 			});
 		}, _this.show606 = function () {
+			_this.setState(function (_ref) {
+				var counter = _ref.counter;
+				return _extends({}, _this.state, {
+					counter: counter + 1,
+					doWeGotBalls: true,
+					shitSurprise: false
+				});
+			});
+		}, _this.showShitSurprise = function () {
 			_this.setState(function () {
 				return _extends({}, _this.state, {
-					counter: 0,
-					doWeGotBalls: true
+					doWeGotBalls: false,
+					shitSurprise: true
 				});
 			});
 		}, _temp), home__possibleConstructorReturn(_this, _ret);
 	}
+
+	// function for checking if a number is a multiple of 10
+
 
 	// shouldComponentUpdate(nextProps, nextState) {
 	// 	return nextState.counter === 10;
@@ -1215,14 +1254,17 @@ var home_Home = function (_Component) {
 				fullHeight: true,
 				'class': style_default.a.main,
 				paddingVertical: true,
-				backgroundColor: '#000'
+				backgroundColor: COLORS.BLACK
 			},
 			Object(preact_min["h"])(
 				InnerContainer,
 				{ onClick: this.handleCounter },
-				home__ref,
 				home__ref2,
-				Object(preact_min["h"])(home_NewYearWrap, { doWeGotBalls: state.doWeGotBalls }),
+				_ref3,
+				Object(preact_min["h"])(home_NewYearWrap, {
+					doWeGotBalls: state.doWeGotBalls,
+					shitSurprise: state.shitSurprise
+				}),
 				Object(preact_min["h"])(
 					ClickForMagicWrap,
 					null,
@@ -1231,7 +1273,7 @@ var home_Home = function (_Component) {
 						color: COLORS.GRAY,
 						fontSize: '1rem'
 					}),
-					Object(preact_min["h"])(components_Image, { src: '../../assets/images/press.gif' })
+					Object(preact_min["h"])(components_Image, { src: '../../assets/images/press-black.gif' })
 				)
 			)
 		);

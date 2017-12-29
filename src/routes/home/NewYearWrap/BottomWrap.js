@@ -4,6 +4,8 @@ import { media } from '../../../style';
 
 export default styled.div`
 	align-self: stretch;
+	bottom: 30px;
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	z-index: 0;
