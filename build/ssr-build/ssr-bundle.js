@@ -1038,14 +1038,17 @@ function Wrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 /* harmony default export */ var Wrap = (styled_components_es["b" /* default */].div(Wrap__templateObject));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/SubtitleWrap.js
-var SubtitleWrap__templateObject = SubtitleWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\ttext-align: left;\n\n\tp {\n\t\tmargin: 7px 0;\n\t\tfont-size: 1.4rem;\n\t}\n'], ['\n\talign-self: flex-start;\n\ttext-align: left;\n\n\tp {\n\t\tmargin: 7px 0;\n\t\tfont-size: 1.4rem;\n\t}\n']);
+var SubtitleWrap__templateObject = SubtitleWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\ttext-align: left;\n\n\tp {\n\t\tmargin: 7px 0;\n\t\tfont-size: 1.4rem;\n\t\t', ' ', ';\n\t}\n'], ['\n\talign-self: flex-start;\n\ttext-align: left;\n\n\tp {\n\t\tmargin: 7px 0;\n\t\tfont-size: 1.4rem;\n\t\t', ' ', ';\n\t}\n']),
+    SubtitleWrap__templateObject2 = SubtitleWrap__taggedTemplateLiteralLoose(['\n\tfont-size: 1.2rem;'], ['\n\tfont-size: 1.2rem;']),
+    SubtitleWrap__templateObject3 = SubtitleWrap__taggedTemplateLiteralLoose(['font-size: 1.1rem;'], ['font-size: 1.1rem;']);
 
 function SubtitleWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
 
-/* harmony default export */ var SubtitleWrap = (styled_components_es["b" /* default */].div(SubtitleWrap__templateObject));
+
+/* harmony default export */ var SubtitleWrap = (styled_components_es["b" /* default */].div(SubtitleWrap__templateObject, media.tablet(SubtitleWrap__templateObject2), media.phone(SubtitleWrap__templateObject3)));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/SparkWrap.js
 var SparkWrap__templateObject = SparkWrap__taggedTemplateLiteralLoose(['\n\tposition: relative;\n\tbottom: 42px;\n'], ['\n\tposition: relative;\n\tbottom: 42px;\n']);
 
