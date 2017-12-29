@@ -1,17 +1,14 @@
 import { h, Component } from 'preact';
 import styled from 'styled-components';
-import Subtitle from '../../components/Subtitle';
 import Fireworks from '../../components/Fireworks';
+import Container from '../../components/Container';
+import ClickForMagicWrap from './ClickForMagicWrap';
+import Paragraph from '../../components/Paragraph';
+import Image from '../../components/Image';
 import NewYearWrap from './NewYearWrap';
 import style from './style';
-import Container from '../../components/Container';
 import Logo from './Logo';
-
-const SubtitleWrap = styled.div`
-	flex: 0 0 100%;
-	align-content: center;
-	text-align: center;
-`;
+import { COLORS } from '../../style';
 
 const InnerContainer = styled.div`
 	height: 100%;
@@ -52,14 +49,25 @@ export default class Home extends Component {
 
 	render(props, state) {
 		return (
-			<Container fullHeight class={style.main} paddingVertical>
+			<Container
+				fullHeight
+				class={style.main}
+				paddingVertical
+				backgroundColor="#000"
+			>
 				<InnerContainer onClick={this.handleCounter}>
 					<Fireworks />
 					<Logo />
 					<NewYearWrap doWeGotBalls={state.doWeGotBalls} />
-					<SubtitleWrap>
-						<Subtitle text="BEST WISHES FROM MOBGEN ❤️" />
-					</SubtitleWrap>
+
+					<ClickForMagicWrap>
+						<Paragraph
+							text="Click around for magic"
+							color={COLORS.GRAY}
+							fontSize="1rem"
+						/>
+						<Image src={`../../assets/images/press.gif`} />
+					</ClickForMagicWrap>
 				</InnerContainer>
 			</Container>
 		);

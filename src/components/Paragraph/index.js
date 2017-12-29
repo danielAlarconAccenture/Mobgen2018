@@ -2,10 +2,12 @@ import { h } from 'preact';
 import styled from 'styled-components';
 
 const StyledParagraph = styled.p`
-	font-size: 1.4rem;
-	font-weight: bold;
+	font-family: 'GraphikRegular';
+	color: ${({ color }) => (color ? `${color}` : `none`)};
 `;
 
-const Paragraph = ({ text }) => <StyledParagraph>{text}</StyledParagraph>;
+const Paragraph = ({ text, color }) => (
+	<StyledParagraph color={color}>{text}</StyledParagraph>
+);
 
 export default Paragraph;

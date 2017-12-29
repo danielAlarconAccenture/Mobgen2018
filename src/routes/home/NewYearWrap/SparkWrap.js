@@ -1,7 +1,8 @@
 import { h } from 'preact';
 import styled from 'styled-components';
+import { media } from '../../../style';
 
 export default styled.div`
-	align-self: flex-end;
-	margin: 10px 0;
+	position: relative;
+	bottom: 42px;
 `;

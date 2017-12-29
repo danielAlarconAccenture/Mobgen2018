@@ -265,7 +265,15 @@ var media = Object.keys(sizes).reduce(function (accumulator, label) {
 	};
 	return accumulator;
 }, {});
+// CONCATENATED MODULE: ./style/colors.js
+var COLORS = {
+	GRAY: '#7F7F7F',
+	WHITE: '#FFFFFF',
+	BLACK: '#000000',
+	ORANGE: '#fe5000'
+};
 // CONCATENATED MODULE: ./style/index.js
+
 
 // EXTERNAL MODULE: ../node_modules/preact/dist/preact.min.js
 var preact_min = __webpack_require__("KM04");
@@ -649,8 +657,12 @@ var Graphik_Black_default = /*#__PURE__*/__webpack_require__.n(Graphik_Black);
 var Graphik_Light = __webpack_require__("Q7JY");
 var Graphik_Light_default = /*#__PURE__*/__webpack_require__.n(Graphik_Light);
 
+// EXTERNAL MODULE: ./assets/fonts/Graphik-Regular.ttf
+var Graphik_Regular = __webpack_require__("pJuJ");
+var Graphik_Regular_default = /*#__PURE__*/__webpack_require__.n(Graphik_Regular);
+
 // CONCATENATED MODULE: ./style/fonts.js
-var fonts__templateObject = fonts__taggedTemplateLiteralLoose(['\n  @font-face {\n    font-family: \'GraphikBlack\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n  @font-face {\n    font-family: \'GraphikLight\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n'], ['\n  @font-face {\n    font-family: \'GraphikBlack\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n  @font-face {\n    font-family: \'GraphikLight\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n']);
+var fonts__templateObject = fonts__taggedTemplateLiteralLoose(['\n  @font-face {\n    font-family: \'GraphikBlack\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n  @font-face {\n    font-family: \'GraphikLight\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n  @font-face {\n    font-family: \'GraphikRegular\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n'], ['\n  @font-face {\n    font-family: \'GraphikBlack\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n  @font-face {\n    font-family: \'GraphikLight\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n  @font-face {\n    font-family: \'GraphikRegular\';\n    font-style: normal;\n    font-weight: normal;\n    src: url(', ');\n    src: url(', '+\'?#iefix\') format(embedded-opentype);\n    src: url(', ') format(\'opentype\');\n  }\n']);
 
 function fonts__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
@@ -660,32 +672,7 @@ function fonts__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; re
 
 
 
-Object(styled_components_es["c" /* injectGlobal */])(fonts__templateObject, Graphik_Black_default.a, Graphik_Black_default.a, Graphik_Black_default.a, Graphik_Light_default.a, Graphik_Light_default.a, Graphik_Light_default.a);
-// CONCATENATED MODULE: ./components/Subtitle/index.js
-var Subtitle__templateObject = Subtitle__taggedTemplateLiteralLoose(['\n\tletter-spacing: 2px;\n\tfont-family: \'GraphikLight\';\n\tfont-size: 1.2em;\n\t', ' ', ';\n'], ['\n\tletter-spacing: 2px;\n\tfont-family: \'GraphikLight\';\n\tfont-size: 1.2em;\n\t', ' ', ';\n']),
-    _templateObject2 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1.2rem;'], ['font-size: 1.2rem;']),
-    _templateObject3 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1rem;'], ['font-size: 1rem;']);
-
-
-
-function Subtitle__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-
-var StyledParagraph = styled_components_es["b" /* default */].p(Subtitle__templateObject, media.tablet(_templateObject2), media.phone(_templateObject3));
-
-var Subtitle_Subtitle = function Subtitle(_ref) {
-	var text = _ref.text;
-	return Object(preact_min["h"])(
-		StyledParagraph,
-		null,
-		text
-	);
-};
-
-/* harmony default export */ var components_Subtitle = (Subtitle_Subtitle);
+Object(styled_components_es["c" /* injectGlobal */])(fonts__templateObject, Graphik_Black_default.a, Graphik_Black_default.a, Graphik_Black_default.a, Graphik_Light_default.a, Graphik_Light_default.a, Graphik_Light_default.a, Graphik_Regular_default.a, Graphik_Regular_default.a, Graphik_Regular_default.a);
 // EXTERNAL MODULE: ../node_modules/animejs/anime.min.js
 var anime_min = __webpack_require__("NQR3");
 var anime_min_default = /*#__PURE__*/__webpack_require__.n(anime_min);
@@ -882,151 +869,8 @@ var Fireworks_Fireworks = function (_Component) {
 }(preact_min["Component"]);
 
 
-// CONCATENATED MODULE: ./components/H3/index.js
-var H3__templateObject = H3__taggedTemplateLiteralLoose(['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 2.6rem;\n\t', ' ', ';\n'], ['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 2.6rem;\n\t', ' ', ';\n']),
-    H3__templateObject2 = H3__taggedTemplateLiteralLoose(['font-size: 2.4rem;'], ['font-size: 2.4rem;']),
-    H3__templateObject3 = H3__taggedTemplateLiteralLoose(['font-size: 2.2rem;'], ['font-size: 2.2rem;']);
-
-
-
-function H3__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-
-var StyledH3 = styled_components_es["b" /* default */].h3(H3__templateObject, media.tablet(H3__templateObject2), media.phone(H3__templateObject3));
-
-var H3_H3 = function H3(_ref) {
-	var text = _ref.text,
-	    style = _ref.style;
-	return Object(preact_min["h"])(
-		StyledH3,
-		{ 'class': style },
-		text
-	);
-};
-
-/* harmony default export */ var components_H3 = (H3_H3);
-// CONCATENATED MODULE: ./components/Paragraph/index.js
-var Paragraph__templateObject = Paragraph__taggedTemplateLiteralLoose(['\n\tfont-size: 1.4rem;\n\tfont-weight: bold;\n'], ['\n\tfont-size: 1.4rem;\n\tfont-weight: bold;\n']);
-
-
-
-function Paragraph__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-var Paragraph_StyledParagraph = styled_components_es["b" /* default */].p(Paragraph__templateObject);
-
-var Paragraph_Paragraph = function Paragraph(_ref) {
-	var text = _ref.text;
-	return Object(preact_min["h"])(
-		Paragraph_StyledParagraph,
-		null,
-		text
-	);
-};
-
-/* harmony default export */ var components_Paragraph = (Paragraph_Paragraph);
-// CONCATENATED MODULE: ./components/Image/index.js
-
-
-
-var Image_Image = function Image(_ref) {
-  var src = _ref.src;
-  return Object(preact_min["h"])('img', { src: src });
-};
-
-/* harmony default export */ var components_Image = (Image_Image);
-// CONCATENATED MODULE: ./routes/home/NewYearWrap/AlignEndWrap.js
-var AlignEndWrap__templateObject = AlignEndWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-end;\n\tmargin: 10px 0;\n'], ['\n\talign-self: flex-end;\n\tmargin: 10px 0;\n']);
-
-function AlignEndWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-/* harmony default export */ var AlignEndWrap = (styled_components_es["b" /* default */].div(AlignEndWrap__templateObject));
-// CONCATENATED MODULE: ./routes/home/NewYearWrap/AlignStartWrap.js
-var AlignStartWrap__templateObject = AlignStartWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\tmargin: 10px 0;\n'], ['\n\talign-self: flex-start;\n\tmargin: 10px 0;\n']);
-
-function AlignStartWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-/* harmony default export */ var AlignStartWrap = (styled_components_es["b" /* default */].div(AlignStartWrap__templateObject));
-// CONCATENATED MODULE: ./routes/home/NewYearWrap/Wrap.js
-var Wrap__templateObject = Wrap__taggedTemplateLiteralLoose(['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\theight: auto;\n\t\twidth: 441px;\n\t\tmax-width: 100%;\n\t}\n'], ['\n\tpointer-events: none;\n\tmax-width: 450px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\theight: auto;\n\t\twidth: 441px;\n\t\tmax-width: 100%;\n\t}\n']);
-
-function Wrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-/* harmony default export */ var Wrap = (styled_components_es["b" /* default */].div(Wrap__templateObject));
-// CONCATENATED MODULE: ./routes/home/NewYearWrap/ClickForMagicWrap.js
-var ClickForMagicWrap__templateObject = ClickForMagicWrap__taggedTemplateLiteralLoose(['\n\tjustify-content: center;\n\tmargin-top: 20px;\n\tdisplay: flex;\n\talign-items: center;\n\n\timg {\n\t\twidth: 22px;\n\t\tbottom: 5px;\n\t\tposition: relative;\n\t\tmargin-left: 8px;\n\t}\n'], ['\n\tjustify-content: center;\n\tmargin-top: 20px;\n\tdisplay: flex;\n\talign-items: center;\n\n\timg {\n\t\twidth: 22px;\n\t\tbottom: 5px;\n\t\tposition: relative;\n\t\tmargin-left: 8px;\n\t}\n']);
-
-function ClickForMagicWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-
-
-
-/* harmony default export */ var ClickForMagicWrap = (styled_components_es["b" /* default */].div(ClickForMagicWrap__templateObject));
-// CONCATENATED MODULE: ./routes/home/NewYearWrap/index.js
-
-
-
-
-
-
-
-
-
-
-var _ref2 = Object(preact_min["h"])(
-	AlignStartWrap,
-	null,
-	Object(preact_min["h"])(components_H3, { text: 'MAKE' })
-);
-
-var _ref3 = Object(preact_min["h"])(
-	AlignEndWrap,
-	null,
-	Object(preact_min["h"])(components_H3, { text: 'SPARK' })
-);
-
-var _ref4 = Object(preact_min["h"])(components_Paragraph, { text: 'Click around for magic' });
-
-var NewYearWrap_NewYearWrap = function NewYearWrap(_ref) {
-	var doWeGotBalls = _ref.doWeGotBalls;
-
-	var imgUrl = doWeGotBalls ? '606' : '2018';
-	return Object(preact_min["h"])(
-		Wrap,
-		null,
-		_ref2,
-		Object(preact_min["h"])(components_Image, { src: '../../assets/images/' + imgUrl + '.png' }),
-		_ref3,
-		Object(preact_min["h"])(
-			ClickForMagicWrap,
-			null,
-			_ref4,
-			Object(preact_min["h"])(components_Image, { src: '../../assets/images/press.png' })
-		)
-	);
-};
-
-/* harmony default export */ var home_NewYearWrap = (NewYearWrap_NewYearWrap);
-// EXTERNAL MODULE: ./routes/home/style.css
-var home_style = __webpack_require__("ZAL5");
-var style_default = /*#__PURE__*/__webpack_require__.n(home_style);
-
 // CONCATENATED MODULE: ./components/Container/index.js
-var Container__templateObject = Container__taggedTemplateLiteralLoose(['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: ', ';\n'], ['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: ', ';\n']);
+var Container__templateObject = Container__taggedTemplateLiteralLoose(['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: ', ';\n\tbackground-color: ', ';\n'], ['\n\theight: ', ';\n\twidth: ', ';\n\tpadding: ', ';\n\tbackground-color: ', ';\n']);
 
 function Container__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
@@ -1042,11 +886,232 @@ var Container = styled_components_es["b" /* default */].div(Container__templateO
 }, function (_ref3) {
 	var paddingVertical = _ref3.paddingVertical;
 	return paddingVertical ? '20px 0' : 'auto';
+}, function (_ref4) {
+	var backgroundColor = _ref4.backgroundColor;
+	return backgroundColor ? '' + backgroundColor : 'none';
 });
 
 /* harmony default export */ var components_Container = (Container);
+// CONCATENATED MODULE: ./routes/home/ClickForMagicWrap.js
+var ClickForMagicWrap__templateObject = ClickForMagicWrap__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\tjustify-content: center;\n\tmargin-top: 20px;\n\tdisplay: flex;\n\tflex-direction: column-reverse;\n\talign-items: center;\n\n\timg {\n\t\twidth: 34px;\n\t\tposition: relative;\n\t}\n\n\tp {\n\t\tmargin: 10px 0;\n\t\tfont-size: 1rem;\n\t}\n'], ['\n\tflex: 0 0 100%;\n\tjustify-content: center;\n\tmargin-top: 20px;\n\tdisplay: flex;\n\tflex-direction: column-reverse;\n\talign-items: center;\n\n\timg {\n\t\twidth: 34px;\n\t\tposition: relative;\n\t}\n\n\tp {\n\t\tmargin: 10px 0;\n\t\tfont-size: 1rem;\n\t}\n']);
+
+function ClickForMagicWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+/* harmony default export */ var ClickForMagicWrap = (styled_components_es["b" /* default */].div(ClickForMagicWrap__templateObject));
+// CONCATENATED MODULE: ./components/Paragraph/index.js
+var Paragraph__templateObject = Paragraph__taggedTemplateLiteralLoose(['\n\tfont-family: \'GraphikRegular\';\n\tcolor: ', ';\n'], ['\n\tfont-family: \'GraphikRegular\';\n\tcolor: ', ';\n']);
+
+
+
+function Paragraph__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+var StyledParagraph = styled_components_es["b" /* default */].p(Paragraph__templateObject, function (_ref) {
+	var color = _ref.color;
+	return color ? '' + color : 'none';
+});
+
+var Paragraph_Paragraph = function Paragraph(_ref2) {
+	var text = _ref2.text,
+	    color = _ref2.color;
+	return Object(preact_min["h"])(
+		StyledParagraph,
+		{ color: color },
+		text
+	);
+};
+
+/* harmony default export */ var components_Paragraph = (Paragraph_Paragraph);
+// CONCATENATED MODULE: ./components/Image/index.js
+
+
+
+var Image_Image = function Image(_ref) {
+  var src = _ref.src;
+  return Object(preact_min["h"])('img', { src: src });
+};
+
+/* harmony default export */ var components_Image = (Image_Image);
+// CONCATENATED MODULE: ./components/H3/index.js
+var H3__templateObject = H3__taggedTemplateLiteralLoose(['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 3rem;\n\tcolor: ', ';\n\t', ' ', ';\n'], ['\n\tmargin: 0;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\toverflow: hidden;\n\tfont-family: \'GraphikBlack\';\n\tfont-size: 3rem;\n\tcolor: ', ';\n\t', ' ', ';\n']),
+    _templateObject2 = H3__taggedTemplateLiteralLoose(['font-size: 2.4rem;'], ['font-size: 2.4rem;']),
+    _templateObject3 = H3__taggedTemplateLiteralLoose(['font-size: 2.2rem;'], ['font-size: 2.2rem;']);
+
+
+
+function H3__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+var StyledH3 = styled_components_es["b" /* default */].h3(H3__templateObject, function (_ref) {
+	var color = _ref.color;
+	return color ? '' + color : 'none';
+}, media.tablet(_templateObject2), media.phone(_templateObject3));
+
+var H3_H3 = function H3(_ref2) {
+	var text = _ref2.text,
+	    color = _ref2.color;
+	return Object(preact_min["h"])(
+		StyledH3,
+		{ color: color },
+		text
+	);
+};
+
+/* harmony default export */ var components_H3 = (H3_H3);
+// CONCATENATED MODULE: ./components/Subtitle/index.js
+var Subtitle__templateObject = Subtitle__taggedTemplateLiteralLoose(['\n\tletter-spacing: 2px;\n\tfont-family: \'GraphikLight\';\n\tfont-size: 1.2em;\n\tcolor: ', ';\n\t', ' ', ';\n'], ['\n\tletter-spacing: 2px;\n\tfont-family: \'GraphikLight\';\n\tfont-size: 1.2em;\n\tcolor: ', ';\n\t', ' ', ';\n']),
+    Subtitle__templateObject2 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1.2rem;'], ['font-size: 1.2rem;']),
+    Subtitle__templateObject3 = Subtitle__taggedTemplateLiteralLoose(['font-size: 1rem;'], ['font-size: 1rem;']);
+
+
+
+function Subtitle__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+var Subtitle_StyledParagraph = styled_components_es["b" /* default */].p(Subtitle__templateObject, function (_ref) {
+	var color = _ref.color;
+	return color ? '' + color : 'none';
+}, media.tablet(Subtitle__templateObject2), media.phone(Subtitle__templateObject3));
+
+var Subtitle_Subtitle = function Subtitle(_ref2) {
+	var text = _ref2.text,
+	    color = _ref2.color;
+	return Object(preact_min["h"])(
+		Subtitle_StyledParagraph,
+		{ color: color },
+		text
+	);
+};
+
+/* harmony default export */ var components_Subtitle = (Subtitle_Subtitle);
+// CONCATENATED MODULE: ./components/Stripe/index.js
+var Stripe__templateObject = Stripe__taggedTemplateLiteralLoose(['\n\t&:after {\n\t\tbackground: ', ';\n\t\tcontent: \'\';\n\t\tdisplay: block;\n\t\theight: 2px;\n\t\tposition: relative;\n\t\twidth: 24px;\n\t}\n'], ['\n\t&:after {\n\t\tbackground: ', ';\n\t\tcontent: \'\';\n\t\tdisplay: block;\n\t\theight: 2px;\n\t\tposition: relative;\n\t\twidth: 24px;\n\t}\n']);
+
+function Stripe__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+/* harmony default export */ var Stripe = (styled_components_es["b" /* default */].span(Stripe__templateObject, COLORS.ORANGE));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/BottomWrap.js
+var BottomWrap__templateObject = BottomWrap__taggedTemplateLiteralLoose(['\n\talign-self: stretch;\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tz-index: 0;\n\t', ' ', ';\n'], ['\n\talign-self: stretch;\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tz-index: 0;\n\t', ' ', ';\n']),
+    BottomWrap__templateObject2 = BottomWrap__taggedTemplateLiteralLoose(['\n\tmargin: 10px 0;'], ['\n\tmargin: 10px 0;']),
+    BottomWrap__templateObject3 = BottomWrap__taggedTemplateLiteralLoose(['margin: 10px 0;'], ['margin: 10px 0;']);
+
+function BottomWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+/* harmony default export */ var BottomWrap = (styled_components_es["b" /* default */].div(BottomWrap__templateObject, media.tablet(BottomWrap__templateObject2), media.phone(BottomWrap__templateObject3)));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/TopWrap.js
+var TopWrap__templateObject = TopWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\tposition: relative;\n\ttop: 32px;\n\t', ' ', ';\n'], ['\n\talign-self: flex-start;\n\tposition: relative;\n\ttop: 32px;\n\t', ' ', ';\n']),
+    TopWrap__templateObject2 = TopWrap__taggedTemplateLiteralLoose(['top: 25px;'], ['top: 25px;']);
+
+function TopWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+/* harmony default export */ var TopWrap = (styled_components_es["b" /* default */].div(TopWrap__templateObject, media.tablet(TopWrap__templateObject2), media.phone(TopWrap__templateObject2)));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/Wrap.js
+var Wrap__templateObject = Wrap__taggedTemplateLiteralLoose(['\n\tpointer-events: none;\n\tmax-width: 550px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\theight: auto;\n\t\twidth: 500px;\n\t\tmax-width: 100%;\n\t\tz-index: 1;\n\t}\n'], ['\n\tpointer-events: none;\n\tmax-width: 550px;\n\tmargin: 0 auto;\n\tflex: 0 0 100%;\n\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\n\timg {\n\t\theight: auto;\n\t\twidth: 500px;\n\t\tmax-width: 100%;\n\t\tz-index: 1;\n\t}\n']);
+
+function Wrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+/* harmony default export */ var Wrap = (styled_components_es["b" /* default */].div(Wrap__templateObject));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/SubtitleWrap.js
+var SubtitleWrap__templateObject = SubtitleWrap__taggedTemplateLiteralLoose(['\n\talign-self: flex-start;\n\ttext-align: left;\n\n\tp {\n\t\tmargin: 7px 0;\n\t\tfont-size: 1.4rem;\n\t}\n'], ['\n\talign-self: flex-start;\n\ttext-align: left;\n\n\tp {\n\t\tmargin: 7px 0;\n\t\tfont-size: 1.4rem;\n\t}\n']);
+
+function SubtitleWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+/* harmony default export */ var SubtitleWrap = (styled_components_es["b" /* default */].div(SubtitleWrap__templateObject));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/SparkWrap.js
+var SparkWrap__templateObject = SparkWrap__taggedTemplateLiteralLoose(['\n\tposition: relative;\n\tbottom: 42px;\n'], ['\n\tposition: relative;\n\tbottom: 42px;\n']);
+
+function SparkWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+/* harmony default export */ var SparkWrap = (styled_components_es["b" /* default */].div(SparkWrap__templateObject));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/index.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+var NewYearWrap__ref2 = Object(preact_min["h"])(Stripe, null);
+
+var NewYearWrap_NewYearWrap = function NewYearWrap(_ref) {
+	var doWeGotBalls = _ref.doWeGotBalls;
+
+	var imgUrl = doWeGotBalls ? '606' : '2018';
+	return Object(preact_min["h"])(
+		Wrap,
+		null,
+		Object(preact_min["h"])(
+			TopWrap,
+			null,
+			Object(preact_min["h"])(components_H3, { text: 'MAKE', color: COLORS.WHITE })
+		),
+		Object(preact_min["h"])(components_Image, { src: '../../assets/images/' + imgUrl + '.png' }),
+		Object(preact_min["h"])(
+			BottomWrap,
+			null,
+			Object(preact_min["h"])(
+				SubtitleWrap,
+				null,
+				NewYearWrap__ref2,
+				Object(preact_min["h"])(components_Subtitle, { text: 'BEST WISHES,', color: COLORS.GRAY }),
+				Object(preact_min["h"])(components_Subtitle, { text: 'MUCH LOVE,', color: COLORS.GRAY }),
+				Object(preact_min["h"])(components_Subtitle, { text: 'THE MOBGEN TEAM', color: COLORS.GRAY })
+			),
+			Object(preact_min["h"])(
+				SparkWrap,
+				null,
+				Object(preact_min["h"])(components_H3, { text: 'SPARK', color: COLORS.WHITE })
+			)
+		)
+	);
+};
+
+/* harmony default export */ var home_NewYearWrap = (NewYearWrap_NewYearWrap);
+// EXTERNAL MODULE: ./routes/home/style.css
+var style = __webpack_require__("ZAL5");
+var style_default = /*#__PURE__*/__webpack_require__.n(style);
+
 // CONCATENATED MODULE: ./routes/home/Logo.js
-var Logo__templateObject = Logo__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n'], ['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 40px;\n\t}\n']);
+var Logo__templateObject = Logo__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 94px;\n\t}\n'], ['\n\tflex: 0 0 100%;\n\n\timg {\n\t\tposition: relative;\n\t\tmargin-left: auto;\n\t\tdisplay: block;\n\t\twidth: 94px;\n\t}\n']);
 
 
 
@@ -1072,8 +1137,7 @@ var Logo = function Logo() {
 // CONCATENATED MODULE: ./routes/home/index.js
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var home__templateObject = home__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n'], ['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n']),
-    home__templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tuser-select: none;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tuser-select: none;\n']);
+var home__templateObject = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tuser-select: none;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tuser-select: none;\n']);
 
 
 
@@ -1094,19 +1158,14 @@ function home__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 
 
-var SubtitleWrap = styled_components_es["b" /* default */].div(home__templateObject);
 
-var InnerContainer = styled_components_es["b" /* default */].div(home__templateObject2);
+
+
+var InnerContainer = styled_components_es["b" /* default */].div(home__templateObject);
 
 var home__ref = Object(preact_min["h"])(Fireworks_Fireworks, null);
 
 var home__ref2 = Object(preact_min["h"])(home_Logo, null);
-
-var home__ref3 = Object(preact_min["h"])(
-	SubtitleWrap,
-	null,
-	Object(preact_min["h"])(components_Subtitle, { text: 'BEST WISHES FROM MOBGEN \u2764\uFE0F' })
-);
 
 var home_Home = function (_Component) {
 	home__inherits(Home, _Component);
@@ -1149,14 +1208,28 @@ var home_Home = function (_Component) {
 	Home.prototype.render = function render(props, state) {
 		return Object(preact_min["h"])(
 			components_Container,
-			{ fullHeight: true, 'class': style_default.a.main, paddingVertical: true },
+			{
+				fullHeight: true,
+				'class': style_default.a.main,
+				paddingVertical: true,
+				backgroundColor: '#000'
+			},
 			Object(preact_min["h"])(
 				InnerContainer,
 				{ onClick: this.handleCounter },
 				home__ref,
 				home__ref2,
 				Object(preact_min["h"])(home_NewYearWrap, { doWeGotBalls: state.doWeGotBalls }),
-				home__ref3
+				Object(preact_min["h"])(
+					ClickForMagicWrap,
+					null,
+					Object(preact_min["h"])(components_Paragraph, {
+						text: 'Click around for magic',
+						color: COLORS.GRAY,
+						fontSize: '1rem'
+					}),
+					Object(preact_min["h"])(components_Image, { src: '../../assets/images/press.gif' })
+				)
 			)
 		);
 	};
@@ -6047,6 +6120,13 @@ var index = {
 
 /* harmony default export */ __webpack_exports__["c"] = (index);
 //# sourceMappingURL=preact-compat.es.js.map
+
+/***/ }),
+
+/***/ "pJuJ":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "93cb83428bbb54d7ca14f0ed275f5592.ttf";
 
 /***/ }),
 

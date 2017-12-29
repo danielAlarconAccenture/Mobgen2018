@@ -3,5 +3,10 @@ import styled from 'styled-components';
 
 export default styled.div`
 	align-self: flex-start;
-	margin: 10px 0;
+	text-align: left;
+
+	p {
+		margin: 7px 0;
+		font-size: 1.4rem;
+	}
 `;

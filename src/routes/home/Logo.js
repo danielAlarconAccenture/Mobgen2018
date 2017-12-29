@@ -9,7 +9,7 @@ const Wrap = styled.div`
 		position: relative;
 		margin-left: auto;
 		display: block;
-		width: 40px;
+		width: 94px;
 	}
 `;
 

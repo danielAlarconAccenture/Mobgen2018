@@ -8,10 +8,11 @@ const StyledH3 = styled.h3`
 	text-overflow: ellipsis;
 	overflow: hidden;
 	font-family: 'GraphikBlack';
-	font-size: 2.6rem;
+	font-size: 3rem;
+	color: ${({ color }) => (color ? `${color}` : `none`)};
 	${media.tablet`font-size: 2.4rem;`} ${media.phone`font-size: 2.2rem;`};
 `;
 
-const H3 = ({ text, style }) => <StyledH3 class={style}>{text}</StyledH3>;
+const H3 = ({ text, color }) => <StyledH3 color={color}>{text}</StyledH3>;
 
 export default H3;
