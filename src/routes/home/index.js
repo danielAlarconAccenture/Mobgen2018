@@ -19,7 +19,6 @@ const InnerContainer = styled.div`
 	flex-flow: row wrap;
 	align-content: space-between;
 	padding: 0 20px;
-	pointer-events: none;
 	user-select: none;
 `;
 

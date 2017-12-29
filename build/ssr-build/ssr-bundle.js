@@ -1073,7 +1073,7 @@ var Logo = function Logo() {
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var home__templateObject = home__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n'], ['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n']),
-    home__templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tpointer-events: none;\n\tuser-select: none;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tpointer-events: none;\n\tuser-select: none;\n']);
+    home__templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tuser-select: none;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tuser-select: none;\n']);
 
 
 
