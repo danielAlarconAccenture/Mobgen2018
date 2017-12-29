@@ -1152,10 +1152,22 @@ var Logo = function Logo() {
 };
 
 /* harmony default export */ var home_Logo = (Logo);
+// CONCATENATED MODULE: ./routes/home/InnerContainer.js
+var InnerContainer__templateObject = InnerContainer__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tuser-select: none;\n\tpadding: 0 60px;\n\t', ' ', ';\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tuser-select: none;\n\tpadding: 0 60px;\n\t', ' ', ';\n']),
+    InnerContainer__templateObject2 = InnerContainer__taggedTemplateLiteralLoose(['padding: 0 40px;'], ['padding: 0 40px;']),
+    InnerContainer__templateObject3 = InnerContainer__taggedTemplateLiteralLoose(['padding: 0 20px;'], ['padding: 0 20px;']);
+
+function InnerContainer__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+
+var InnerContainer = styled_components_es["b" /* default */].div(InnerContainer__templateObject, media.tablet(InnerContainer__templateObject2), media.phone(InnerContainer__templateObject3));
+
+/* harmony default export */ var home_InnerContainer = (InnerContainer);
 // CONCATENATED MODULE: ./routes/home/index.js
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var home__templateObject = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tuser-select: none;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tuser-select: none;\n']);
 
 
 
@@ -1165,7 +1177,6 @@ function home__possibleConstructorReturn(self, call) { if (!self) { throw new Re
 
 function home__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function home__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
@@ -1178,8 +1189,6 @@ function home__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 
 
-
-var InnerContainer = styled_components_es["b" /* default */].div(home__templateObject);
 
 var home__ref2 = Object(preact_min["h"])(Fireworks_Fireworks, null);
 
@@ -1257,7 +1266,7 @@ var home_Home = function (_Component) {
 				backgroundColor: COLORS.BLACK
 			},
 			Object(preact_min["h"])(
-				InnerContainer,
+				home_InnerContainer,
 				{ onClick: this.handleCounter },
 				home__ref2,
 				_ref3,
@@ -1299,6 +1308,7 @@ function app__inherits(subClass, superClass) { if (typeof superClass !== "functi
 
 
 
+
 var app__ref = Object(preact_min["h"])(home_Home, { path: '/' });
 
 var app_App = function (_Component) {
@@ -1327,7 +1337,7 @@ var app_App = function (_Component) {
 	App.prototype.render = function render() {
 		return Object(preact_min["h"])(
 			components_Container,
-			{ fullHeight: true },
+			{ fullHeight: true, backgroundColor: COLORS.BLACK },
 			Object(preact_min["h"])(
 				preact_router_es_Router,
 				{ onChange: this.handleRoute },
