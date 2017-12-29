@@ -908,6 +908,28 @@ var H3_H3 = function H3(_ref) {
 };
 
 /* harmony default export */ var components_H3 = (H3_H3);
+// CONCATENATED MODULE: ./components/Paragraph/index.js
+var Paragraph__templateObject = Paragraph__taggedTemplateLiteralLoose(['\n\tfont-size: 1.4rem;\n\tfont-weight: bold;\n'], ['\n\tfont-size: 1.4rem;\n\tfont-weight: bold;\n']);
+
+
+
+function Paragraph__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+var Paragraph_StyledParagraph = styled_components_es["b" /* default */].p(Paragraph__templateObject);
+
+var Paragraph_Paragraph = function Paragraph(_ref) {
+	var text = _ref.text;
+	return Object(preact_min["h"])(
+		Paragraph_StyledParagraph,
+		null,
+		text
+	);
+};
+
+/* harmony default export */ var components_Paragraph = (Paragraph_Paragraph);
 // CONCATENATED MODULE: ./components/Image/index.js
 
 
@@ -945,7 +967,18 @@ function Wrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; ret
 
 
 /* harmony default export */ var Wrap = (styled_components_es["b" /* default */].div(Wrap__templateObject));
+// CONCATENATED MODULE: ./routes/home/NewYearWrap/ClickForMagicWrap.js
+var ClickForMagicWrap__templateObject = ClickForMagicWrap__taggedTemplateLiteralLoose(['\n\tjustify-content: center;\n\tmargin-top: 20px;\n\tdisplay: flex;\n\talign-items: center;\n\n\timg {\n\t\twidth: 22px;\n\t\tbottom: 5px;\n\t\tposition: relative;\n\t\tmargin-left: 8px;\n\t}\n'], ['\n\tjustify-content: center;\n\tmargin-top: 20px;\n\tdisplay: flex;\n\talign-items: center;\n\n\timg {\n\t\twidth: 22px;\n\t\tbottom: 5px;\n\t\tposition: relative;\n\t\tmargin-left: 8px;\n\t}\n']);
+
+function ClickForMagicWrap__taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
+
+
+
+/* harmony default export */ var ClickForMagicWrap = (styled_components_es["b" /* default */].div(ClickForMagicWrap__templateObject));
 // CONCATENATED MODULE: ./routes/home/NewYearWrap/index.js
+
+
 
 
 
@@ -966,6 +999,8 @@ var _ref3 = Object(preact_min["h"])(
 	Object(preact_min["h"])(components_H3, { text: 'SPARK' })
 );
 
+var _ref4 = Object(preact_min["h"])(components_Paragraph, { text: 'Click around for magic' });
+
 var NewYearWrap_NewYearWrap = function NewYearWrap(_ref) {
 	var doWeGotBalls = _ref.doWeGotBalls;
 
@@ -975,7 +1010,13 @@ var NewYearWrap_NewYearWrap = function NewYearWrap(_ref) {
 		null,
 		_ref2,
 		Object(preact_min["h"])(components_Image, { src: '../../assets/images/' + imgUrl + '.png' }),
-		_ref3
+		_ref3,
+		Object(preact_min["h"])(
+			ClickForMagicWrap,
+			null,
+			_ref4,
+			Object(preact_min["h"])(components_Image, { src: '../../assets/images/press.png' })
+		)
 	);
 };
 
@@ -1032,7 +1073,7 @@ var Logo = function Logo() {
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var home__templateObject = home__taggedTemplateLiteralLoose(['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n'], ['\n\tflex: 0 0 100%;\n\talign-content: center;\n\ttext-align: center;\n']),
-    home__templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tpointer-events: none;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tpointer-events: none;\n']);
+    home__templateObject2 = home__taggedTemplateLiteralLoose(['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tpointer-events: none;\n\tuser-select: none;\n'], ['\n\theight: 100%;\n\tdisplay: flex;\n\tflex-flow: row wrap;\n\talign-content: space-between;\n\tpadding: 0 20px;\n\tpointer-events: none;\n\tuser-select: none;\n']);
 
 
 

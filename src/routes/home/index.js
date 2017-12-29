@@ -20,6 +20,7 @@ const InnerContainer = styled.div`
 	align-content: space-between;
 	padding: 0 20px;
 	pointer-events: none;
+	user-select: none;
 `;
 
 export default class Home extends Component {
