@@ -1189,7 +1189,6 @@ function home__inherits(subClass, superClass) { if (typeof superClass !== "funct
 
 
 
-
 var home__ref2 = Object(preact_min["h"])(Fireworks_Fireworks, null);
 
 var _ref3 = Object(preact_min["h"])(home_Logo, null);
@@ -1213,11 +1212,8 @@ var home_Home = function (_Component) {
 		}, _this.multipleOfTen = function (number) {
 			return number !== 0 && number % 10 === 0;
 		}, _this.handleCounter = function () {
-			var _this$state = _this.state,
-			    counter = _this$state.counter,
-			    shitSurprise = _this$state.shitSurprise;
+			var counter = _this.state.counter;
 
-			if (shitSurprise) return;
 			if (counter === 100) {
 				_this.showShitSurprise();
 				return;
@@ -1242,6 +1238,7 @@ var home_Home = function (_Component) {
 		}, _this.showShitSurprise = function () {
 			_this.setState(function () {
 				return _extends({}, _this.state, {
+					counter: 0,
 					doWeGotBalls: false,
 					shitSurprise: true
 				});

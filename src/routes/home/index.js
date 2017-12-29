@@ -1,5 +1,4 @@
 import { h, Component } from 'preact';
-import styled from 'styled-components';
 import Fireworks from '../../components/Fireworks';
 import Container from '../../components/Container';
 import ClickForMagicWrap from './ClickForMagicWrap';
@@ -22,8 +21,7 @@ export default class Home extends Component {
 	multipleOfTen = number => number !== 0 && number % 10 === 0;
 
 	handleCounter = () => {
-		const { counter, shitSurprise } = this.state;
-		if (shitSurprise) return;
+		const { counter } = this.state;
 		if (counter === 100) {
 			this.showShitSurprise();
 			return;
@@ -50,6 +48,7 @@ export default class Home extends Component {
 	showShitSurprise = () => {
 		this.setState(() => ({
 			...this.state,
+			counter: 0,
 			doWeGotBalls: false,
 			shitSurprise: true
 		}));
