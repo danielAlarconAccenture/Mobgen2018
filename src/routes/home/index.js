@@ -9,15 +9,7 @@ import NewYearWrap from './NewYearWrap';
 import style from './style';
 import Logo from './Logo';
 import { COLORS } from '../../style';
-
-const InnerContainer = styled.div`
-	height: 100%;
-	display: flex;
-	flex-flow: row wrap;
-	align-content: space-between;
-	padding: 0 20px;
-	user-select: none;
-`;
+import InnerContainer from './InnerContainer';
 
 export default class Home extends Component {
 	state = {

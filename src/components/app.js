@@ -2,6 +2,7 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
 import '../style/fonts';
+import { COLORS } from '../style';
 import Home from '../routes/home';
 import Container from '../components/Container';
 
@@ -17,7 +18,7 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<Container fullHeight>
+			<Container fullHeight backgroundColor={COLORS.BLACK}>
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 				</Router>
